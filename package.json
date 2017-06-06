@@ -1,0 +1,26 @@
+{
+  "name": "promisified-fs",
+  "version": "1.0.0-alpha",
+  "description": "A promisified version of fs",
+  "main": "promisified-fs.js",
+  "scripts": {
+    "test": "node promisified-fs.test.js"
+  },
+  "keywords": [
+    "fs",
+    "async",
+    "promise",
+    "promisified",
+    "proxy"
+  ],
+  "author": "Lon <longhaohe@gmail.com> (http://lon.im)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnlon/promisified-fs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cnlon/promisified-fs/issues"
+  },
+  "homepage": "https://github.com/cnlon/promisified-fs#readme"
+}
