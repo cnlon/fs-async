@@ -1,18 +1,16 @@
-'use strict';
-
-const fs = require('fs')
-const promisifiedFs = require('./promisified-fs')
+var fs = require('fs')
+var promisifiedFs = require('./promisified-fs')
 
 
 // test runner
 
-const result = []
-let finished = 0
+var result = []
+var finished = 0
 function print () {
-    const passingIcon = '✅ '
-    const failingIcon = '❌ '
-    let passing = 0
-    let failing = 0
+    var passingIcon = '✅ '
+    var failingIcon = '❌ '
+    var passing = 0
+    var failing = 0
     for (var i = 0, l = result.length, v, message, error, progress; i < l; i++) {
         v = result[i]
         message = v[0]
@@ -37,7 +35,7 @@ function print () {
     process.exit(failing ? 1 : 0)
 }
 function should (message, value) {
-    const raw = [message, null] // [message, error]
+    var raw = [message, null] // [message, error]
     result.push(raw)
     if (typeof value === 'function') {
         try {
@@ -68,8 +66,8 @@ should('`promisifiedFs.fs === fs`', promisifiedFs.fs === fs)
 should('`promisifiedFs.constants === fs.constants`', promisifiedFs.constants === fs.constants)
 should('`promisifiedFs.readFileSync === fs.readFileSync`', promisifiedFs.readFileSync === fs.readFileSync)
 should('`promisifiedFs.readFile !== fs.readFile`', promisifiedFs.readFile !== fs.readFile)
-const testFilename = 'test.txt'
-const testContent = 'My name is promisifiedFs!'
+var testFilename = 'test.txt'
+var testContent = 'My name is promisifiedFs!'
 should(
     'Write "' + testContent + '" to "' + testFilename + '" by `promisifiedFs.writeFile`.',
     function (done) {
@@ -85,7 +83,7 @@ should(
     function (done) {
         promisifiedFs.readFile(testFilename)
             .then(function (content) {
-                const isError = String(content) !== testContent
+                var isError = String(content) !== testContent
                 done(isError)
             })
             .catch(done)
