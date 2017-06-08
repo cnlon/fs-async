@@ -1,6 +1,6 @@
 {
   "name": "promisified-fs",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-beta.0",
   "description": "A promisified version of fs",
   "main": "promisified-fs.js",
   "scripts": {
