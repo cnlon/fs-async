@@ -1,8 +1,9 @@
 # promisified-fs
 
-[![npm version](https://badge.fury.io/js/promisified-fs.svg)](https://badge.fury.io/js/promisified-fs)
-[![Build Status](https://travis-ci.org/cnlon/promisified-fs.svg?branch=master)](https://travis-ci.org/cnlon/promisified-fs)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
+[![node version](https://img.shields.io/badge/node-%3E%3Dv0.12-brightgreen.svg)](https://travis-ci.org/cnlon/promisified-fs)
+[![npm version](https://img.shields.io/npm/v/promisified-fs.svg?colorB=brightgreen)](https://www.npmjs.com/package/promisified-fs)
+[![build status](https://img.shields.io/travis/cnlon/promisified-fs/master.svg)](https://travis-ci.org/cnlon/promisified-fs)
+[![code style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
 A promisified version of `fs`.
 
