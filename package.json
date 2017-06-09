@@ -1,6 +1,6 @@
 {
   "name": "promisified-fs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A promisified version of fs(File System) in Node.js",
   "main": "promisified-fs.js",
   "scripts": {
