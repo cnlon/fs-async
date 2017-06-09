@@ -12,7 +12,7 @@ function proxy (key) {
                 if (callbackArgs[0]) { // error
                     reject.apply(null, callbackArgs)
                 } else {
-                    resolve(callbackArgs.slice(1))
+                    resolve.apply(null, callbackArgs.slice(1))
                 }
             })
             method.apply(null, args)
