@@ -25,7 +25,7 @@ Object.defineProperty(promisifiedFs, 'fs', {value: fs})
 var keys = Object.keys(fs)
 for (var i = 0, l = keys.length, key; i < l; i++) {
     key = keys[i]
-    if (fs.hasOwnProperty(key + 'Sync')) {
+    if (fs[key + 'Sync']) {
         promisifiedFs[key] = proxy(key)
     }
 }
